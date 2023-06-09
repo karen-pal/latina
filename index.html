@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Bitácora |Karen Palacio | Latina </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+  </head>
+  <body>
+<h1 id="title"> Scary latinamerican music
+
+     </h1>
+<a id="lang" href="en.html">EN</a>
+</br>
+
+<img src="./screens/screen.png" alt="Captura de pantalla del circuito levantado: bitwig, imágenes con las que meditar"/>
+<h2> Introducción </h2>
+<p id="introducción">
+La sensación de lo inagotable produce un vértigo muy particular. 
+<br>
+Todas esas cosas que llevan al infinito llevan al cero.
+
+<br>
+Está el vértigo dando vueltas en muchos lados.
+<br>
+<br>
+Me pasó hace una semana, cuando hice andar un par de modelos de Machine Learning text2music: "A partir de ahora podría generar más exploración sonora del grado de complejidad que yo quisiera de la que puedo escuchar por el resto de mi vida".
+
+<br>
+<br>
+Es un cambio de escala. Es un cambio de relación con mi computadora. Ahora este ente que lo entendía de cierto modo adquirió una nueva capacidad. Por la manera en que yo me relaciono con ella, si juego bien mis cartas yo también adquiero nuevas capacidades. Obviamente también adquiero problemas y desafíos.
+
+<br>
+<br>
+<br>
+"
+- Cómo negocio con el infinito?
+<br>
+<br>
+
+- Es el mismo infinito de la página en blanco.
+"
+<br>
+<br>
+<br>
+Ahora se siente : hay estrellas nuevas en el cielo.
+<br>
+<br>
+Y se sigue adelante con la tierra y cielo nuevos. 
+
+<br>
+<audio id='./audios/a_song.wav' src='./audios/a_song.wav' style='width: 100%;' controls></audio>
+<br>
+</p>
+<h2>Meta</h2>
+<p>
+Meta (ie facebook) sacó un nuevo modelo para generación de sonidos (le dicen "música"). Venía con esto de entender mi tamaño en relación a la compu pero se aproxima con esto otra medición posible.
+<br>
+Meta quiere hacer música de manera automática.
+<br>
+<br>
+Y obvio, estoy yo pero hay más cosas que pensar. Es interesante que estos modelos son denominados por les autores como generadores de "música" a secas. Por detrás tienen intenciones "generalistas" en cuanto a "estilos" quienes crean estos modelos - intentan abarcar el abanico de posibilidades dentro de La Industria Música.
+
+<br>
+<br>
+Respecto a esto, <b>cuál es el lugar de las expresiones sonoras de latinoamérica en este supuesto generador de "música"?</b>
+
+<h2> "A song from latinamerica" <h2>
+<audio id='./audios/a_song_from_latinamerica.wav' src='./audios/a_song_from_latinamerica.wav' style='width: 100%;' controls></audio>
+> Audio generado usando el prompt "A song from latinamerica".
+<br>
+<br>
+De por sí partamos que para interactuar con el modelo hay que escribir prompts en inglés. Ahora voy a explicar un poco qué es un prompt.
+</p>
+<h2> Generación (In)Condicional </h2>
+<p>
+ Hay formas de crear con machine learning en donde no hay manera "fácil" de guiar la generación: hay que ponerse a estudiar cómo los hiperparámetros del modelo afectan al resultado final - y es muy dificil para nosotrxs humanos crear esa intuición. Esta manera no guiada es la que se llama Unconditional Generation, y hay modelos y arquitecturas como lo son RAVE para la creación sonora de esta manera.
+
+Otro paradigma diferente es el Conditional generation. musicGen, el último modelo (a la fecha) sacado por Meta (facebook) para la creación sonora es de este paradigma. Es un modelo que se puede "condicionar", "guiar", "conducir". Otro paradigma que atraviesa a musicGen es el paradigma multimodal: toma como entrada (para condicionar) un texto y nos devuelve un audio. musicGen además puede tomar una "melodía", pero no va a ser mi foco esta vez. 
+
+<br>
+<br>
+<a href="https://karen-pal.github.io/ser_ser_ser/" target="_blank">
+
+lobotomizar, adoctrinar, corregir una tendencia, sugerir nuevos caminos (en orden).
+</a>
+<br>
+<br>
+Un prompt es una oración - en lo que decimos "lenguaje natural". Esto que estás leyendo podría ser un prompt. Es una oración que se usa para "guiar" una generación usando machine learning.
+
+
+
+<br>
+<br>
+</p>
+<h2> Scary </h2>
+<p>
+me gusta el prompt "scary". En los modelos text2image con esa palabra sola podés generar cosas realmente horribles - tan grotescas que no me sentiría cómoda mostrando. Rápidamente, con pocas palabras, esos modelos se van a cuerpos desmembrados, mutilaciones, etc.
+
+<br>
+<br>
+
+Me interesa ver cómo se da eso en los modelos text2music, y luego ver cómo conjuga eso con la "música latina" que genera - tan estereotipadamente feliz y tropical. Qué es una cumbia terrorífica? Qué es una chacarera que da miedo? Qué es música latinoamericana terrorífica?
+</p>
+
+<h2> Prompt: "scary music and screaming" <h2>
+<audio id='./audios/scary_music_and_screaming.mp3' src='./audios/scary_music_and_screaming.mp3' style='width: 100%;' controls></audio>
+<p> De por sí me costó conseguir que genere cosas realmente ruidosas, del terror o por el estilo. Tiende rápidamente a música corporativa. 
+
+
+</p>
+<h2> progresión imágenes </h2>
+<p>
+En paralelo
+<br>
+<br>
+
+Sabía que este modelo estaba finetuneado para hacer imágenes "etéreas", así que quería ver cómo manejaba a Leighton. Rápidamente me aburrí de lo hegemónico del resultado, y terminé pensando en formas de producir los errores que me gustan más: demasiados brazos, articulaciones dobladas de formas en que no debería, simetrías circulares, íconos religiosos.
+
+<br>
+Selección final de imágenes:
+<img src="./screens/progresion_final.png" alt="Captura de pantalla del circuito levantado: bitwig, imágenes con las que meditar"/>
+
+<br>
+Procesos:
+<img src="./screens/proceso_2.png" alt="Captura de pantalla del circuito levantado: bitwig, imágenes con las que meditar"/>
+<img src="./screens/proceso_1.png" alt="Captura de pantalla del circuito levantado: bitwig, imágenes con las que meditar"/>
+
+</p>
+
+<h2> progresión sonora </h2>
+<p>
+En paralelo
+<br>
+<br>
+
+me gusta sentir el ruido soplándome en el oido.
+
+<audio id='./audios/soplo.mp3' src='./audios/soplo.mp3' style='width: 100%;' controls></audio>
+<br>
+Con mis auriculares se vuelve íntimo.
+<br>
+<br>
+ts
+
+<br>
+<br>
+ts
+
+<br>
+ts
+
+<br>
+<br>
+no termina de formarse la palabra, o hay falta de señal o hay un exceso de información. en la comunicación, el cero pegó la vuelta sobre sí mismo.
+
+<audio id='./audios/mezcla.mp3' src='./audios/mezcla.mp3' style='width: 100%;' controls></audio>
+<br>
+Lo siento así.  rompo de a capas, apilando filtros y modificadores por arriba de los instrumentos digitales, viendo qué emerge.
+
+<br>
+<br>
+Vengo pensando también en lo que se rompe y lo que se arma entre lo roto. Este mes y hace unos diez años. La imagen que pienso es la jungla creciendo entre las ruinas de la catedral. Me imagino los múltiples brazos moviendose entre mis sabánas y arriba de la mesa de experimentos.
+<br>
+<br>
+
+Empecé el armado basado en un estudio que había hecho hace unos meses de la sonoridad de arca en su disco homónimo. Es el siguiente:
+
+<audio id='./audios/soy_arca.mp3' src='./audios/soy_arca.mp3' style='width: 100%;' controls></audio>
+
+<br>
+Saqué los instrumentos que ya no me gustaban y empecé a romper el resto moviendo mi atención por distintas partes de la imagen.
+
+<br>
+El pecho.
+<br>
+<audio id='./audios/pecho.mp3' src='./audios/pecho.mp3' style='width: 100%;' controls></audio>
+
+Los dedos y los brazos.
+<br>
+<audio id='./audios/dedos.mp3' src='./audios/dedos.mp3' style='width: 100%;' controls></audio>
+
+Las tetas.
+<br>
+<audio id='./audios/tetas.mp3' src='./audios/tetas.mp3' style='width: 100%;' controls></audio>
+
+La cabeza.
+<br>
+<audio id='./audios/cabeza.mp3' src='./audios/cabeza.mp3' style='width: 100%;' controls></audio>
+
+
+<h1>Y ahora, en retrospectiva, pensando lo que hice, es imposible no pensarlo como un beso.</h1>
+
+<br>
+<h2> versión final </h2>
+<audio id='./audios/final.mp3' src='./audios/final.mp3' style='width: 100%;' controls></audio>
+
+
+<h1>
+aux: otras versiones
+</h1>
+
+<h2> versión 1 </h2>
+<audio id='./chanta.mp3' src='./chanta.mp3' style='width: 100%;' controls></audio>
+
+<h2> versión 2 </h2>
+<audio id='./chanta_2.mp3' src='./chanta_2.mp3' style='width: 100%;' controls></audio>
+</p>
+
+
+  </body>
+  <footer id="final"> <h1>
+      > abril 2023. 
+<br>
+      <a href="https://www.instagram.com/kardaver/" >Karen Palacio aka kardaver. </a>
+<br>
+      <a href="https://www.youtube.com/@karenpalacio" >Canal de Youtube</a>
+<br>
+      <a href="https://karen-pal.github.io/about/" >Página personal</a>
+<br>
+      </h1>
+  </footer>
+  <script>console.log("Buscabas algo?")</script>
+  </body>
+</html>
